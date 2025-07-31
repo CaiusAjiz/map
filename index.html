@@ -1,33 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-            <title>Nevergood's Faerun</title>
-            <!--LeafletJS-->
-            <link rel="stylesheet" 
-                href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
-                integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" 
-                crossorigin=""/>
-            <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-                integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-                crossorigin=""></script>
-            
-            <script>
-                function onLoad() {
-                    var mymap = L.map('map').setView([30.00000, -50.00000], 5);
-                    L.tileLayer('tiles/{z}/{x}/{y}.png',
-                    {
-                        minZoom: 0,
-                        maxZoom: 10,
-                        noWrap: true,
-                        minZoom: 3
-                    }).addTo(mymap);
-                        }
-            </script>
-    </head>
-    <body onload="onLoad();">
-                
-        <div id="map"></div>
-        
-    <link rel="stylesheet" href="index.css" />
-    </body>
+
+	<head>
+		<title>Nevergood's Faerun</title>
+		<!--LeafletJS-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+		<script src="index.js"></script>
+	</head>
+
+	<body onload="onLoad();">
+		<div id="map"></div>
+		<link rel="stylesheet" href="style.css" />
+	</body>
+
 </html>
